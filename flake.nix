@@ -5,7 +5,8 @@
 
   outputs = {self, ... }:
   {
-# currently nothing here
+    packages.x86_64-linux.default = self + "/wallpapers";
+    packages.aarch64-linux.default = self + "/wallpapers";
   };
 }
 
